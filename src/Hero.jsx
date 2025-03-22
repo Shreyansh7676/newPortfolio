@@ -18,7 +18,7 @@ function App() {
                         <div className="text-center" data-aos="fade-up">
                             <div className='flex flex-col items-center'>
                                 <p className='text-gray-400 items-start'>Hi, I am</p>
-                                <h1 className="text-3xl md:text-6xl font-bold text-white mb-6">
+                                <h1 className="text-3xl md:text-6xl font-bold text-white mb-4">
                                     Shreyansh Srivastava
                                 </h1>
                                 {/* <div className='max-w-6xl flex gap-5 items-center justify-center'>
@@ -51,7 +51,7 @@ function App() {
 
                             </div>
 
-                            <div className="flex flex-col my-8 items-center md:flex-row justify-center gap-4">
+                            <div className="flex flex-col my-4 items-center md:flex-row justify-center gap-4">
                                 <button
                                     className="bg-transparent text-sm max-w-1/8 text-emerald-300 px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:text-gray-400 cursor-pointer transition-colors"
 
