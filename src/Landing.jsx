@@ -2,43 +2,22 @@ import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Code2 } from 'lucide-react';
 import RotatingText from './components/rotatetext';
 import Hero from './Hero'
+import About from './About';
+import DecryptedText from './components/ScrollReveal';
+import SplitText from './components/SplitText';
+
+
 
 function App() {
     return (
         <div className="bg-black text-gray-100 min-h-screen">
             <Hero />
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <ChevronDown className="w-6 h-6 text-emerald-400" />
+            </div>
             {/* Hero Section */}
-            <section className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 border-t-2 border-emerald-400/40">
-                <div className="max-w-5xl mx-auto">
-                    <p className="text-emerald-400 font-mono mb-1">Hi, my name is</p>
-                    <h1 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
-                        Shreyansh Srivastava
-                    </h1>
-                    <div className='flex gap-8'>
-                        <h1 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
-                            A
-                        </h1>
-                        
-                    </div>
-
-                    <p className="text-gray-400 max-w-xl text-lg mb-8">
-                        I'm a software engineer specializing in building exceptional digital experiences.
-                        Currently, I'm focused on building accessible, human-centered products.
-                    </p>
-                    <div className="flex space-x-4">
-                        <a href="#contact" className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
-                            Get in touch
-                        </a>
-                        <a href="#projects" className="border border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 px-6 py-3 rounded-lg font-medium transition duration-300">
-                            View my work
-                        </a>
-                    </div>
-                </div>
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                    <ChevronDown className="w-6 h-6 text-emerald-400" />
-                </div>
-            </section>
-
+            
+            <About />
             {/* Projects Section */}
             <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-5xl mx-auto">
