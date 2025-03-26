@@ -7,7 +7,7 @@ function App() {
 
     return (
         <>
-            <div className="min-h-screen bg-black">
+            <div className="min-h-screen bg-zinc-950">
                 {/* Hero Section */}
                 <div className="relative min-h-screen flex items-center justify-center">
                     {/* Aurora Background */}

@@ -5,7 +5,7 @@ import Img1 from './assets/3426526-Photoroom.png'
 const About = () => {
     return (
         <div>
-            <div className="min-h-screen flex items-center justify-center relative bg-black">
+            <div className="min-h-screen flex items-center justify-center relative bg-zinc-950">
                 <AnimatedContent
 
                     distance={100}
