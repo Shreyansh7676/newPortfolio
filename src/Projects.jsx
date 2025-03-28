@@ -52,8 +52,8 @@ const Projects = () => {
                                     </div>
                                     <div className='flex items-center pt-5 gap-1 scale-90 md:scale-100'>
                                         <button className='bg-zinc-900 p-2 font-light rounded-xl text-xs'>React JS</button>
-                                        <button className='bg-zinc-900 p-2 rounded-xl text-xs'>Firebase</button>
-                                        <button className='bg-zinc-900 p-2 rounded-xl text-xs'>Tailwind CSS</button>
+                                        <button className='bg-zinc-900 p-2 font-light rounded-xl text-xs'>Firebase</button>
+                                        <button className='bg-zinc-900 p-2 font-light rounded-xl text-xs'>Tailwind CSS</button>
                                     </div>
                                 </div>
 
@@ -74,7 +74,7 @@ const Projects = () => {
                                     <div className='flex items-center pt-5 gap-1 scale-90 md:scale-100'>
                                         <button className='bg-zinc-900 p-2 font-light rounded-xl text-xs'>React TS</button>
                                         <button className='bg-zinc-900 p-2 font-light rounded-xl text-xs'>Axios</button>
-                                        <button className='bg-zinc-900 p-2 rounded-xl text-xs'>Tailwind CSS</button>
+                                        <button className='bg-zinc-900 p-2 font-light rounded-xl text-xs'>Tailwind CSS</button>
                                     </div>
                                 </div>
 
@@ -96,7 +96,7 @@ const Projects = () => {
                                     <div className='flex items-center pt-5 gap-1 scale-90 md:scale-100'>
                                         <button className='bg-zinc-900 p-2 font-light rounded-2xl text-xs'>React JS</button>
                                         <button className='bg-zinc-900 p-2 font-light rounded-2xl text-xs'>Axios</button>
-                                        <button className='bg-zinc-900 p-2 rounded-2xl text-xs'>Tailwind CSS</button>
+                                        <button className='bg-zinc-900 p-2 font-light rounded-2xl text-xs'>Tailwind CSS</button>
                                     </div>
                                 </div>
 
@@ -117,7 +117,7 @@ const Projects = () => {
                                     <div className='flex items-center pt-5 gap-1 scale-90 md:scale-100'>
                                         <button className='bg-zinc-900 p-2 font-light rounded-2xl text-xs'>React JS</button>
                                         <button className='bg-zinc-900 p-2 font-light rounded-2xl text-xs'>Firebase</button>
-                                        <button className='bg-zinc-900 p-2 rounded-2xl text-xs'>Tailwind CSS</button>
+                                        <button className='bg-zinc-900 p-2 font-light rounded-2xl text-xs'>Tailwind CSS</button>
                                     </div>
                                 </div>
 
