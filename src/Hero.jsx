@@ -18,7 +18,7 @@ function App() {
                         <div className="text-center" data-aos="fade-up">
                             <div className='flex flex-col items-center'>
                                 <p className='text-gray-400 items-start'>Hi, I am</p>
-                                
+
                                 <BlurText
 
                                     text="Shreyansh Srivastava"
@@ -36,12 +36,9 @@ function App() {
                             </div>
 
                             <div className="flex flex-col my-4 items-center md:flex-row justify-center gap-4">
-                                <button
-                                    className="bg-transparent text-sm max-w-1/2 md:max-w-1/8 text-emerald-300 px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:text-gray-300 cursor-pointer transition-colors"
-
-                                >
+                                <a className="bg-transparent text-sm max-w-1/2 md:max-w-1/8 text-emerald-300 px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:text-gray-300 cursor-pointer transition-colors" href='https://drive.google.com/file/d/1v_WCv0D82L5z-28GoVB8CeMVrgSfyUiE/view?usp=sharing' target='_blank'>
                                     View Resume
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
