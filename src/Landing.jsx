@@ -43,13 +43,13 @@ function App() {
                         or just want to say hi, I'll try my best to get back to you!
                     </p>
                     <div className="flex justify-center space-x-6">
-                        <a href="mailto:hello@example.com" className="text-gray-400 hover:text-emerald-400 transition duration-300">
+                        <a href="mailto:shreyansh.ind18@thapar.edu" className="text-gray-400 hover:text-emerald-400 transition duration-300">
                             <Mail className="w-6 h-6" />
                         </a>
-                        <a href="https://github.com" className="text-gray-400 hover:text-emerald-400 transition duration-300">
+                        <a href="https://github.com/Shreyansh7676" className="text-gray-400 hover:text-emerald-400 transition duration-300">
                             <Github className="w-6 h-6" />
                         </a>
-                        <a href="https://linkedin.com" className="text-gray-400 hover:text-emerald-400 transition duration-300">
+                        <a href="https://www.linkedin.com/in/shreyansh-srivastava-945034257/" className="text-gray-400 hover:text-emerald-400 transition duration-300">
                             <Linkedin className="w-6 h-6" />
                         </a>
                     </div>
