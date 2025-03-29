@@ -5,6 +5,7 @@ import About from './About';
 import Projects from './Projects';
 import Orb from './components/Orb';
 import TechStack from './TechStack';
+import Achievements from './Achievements';
 
 function App() {
     return (
@@ -20,7 +21,9 @@ function App() {
             <Projects />
             {/*Tech Stack*/}
             <TechStack />
+            <Achievements />
             {/* Contact Section */}
+            
             <section id="contact" className="py-20 flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-zinc-950 min-h-screen relative">
                 {/* Orb positioned absolutely in the background */}
                 <div className="absolute inset-0 overflow-hidden">

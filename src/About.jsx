@@ -31,10 +31,15 @@ const About = () => {
                                 <h2 className="text-3xl font-bold mb-6">About Me</h2>
 
 
-                                <p className="text-gray-400 text-lg mb-8">
-                                    I'm a third-year B.Tech student at Thapar Institute of Engineering and Technology, majoring in Computer Science. Passionate about frontend development, I love crafting user-friendly and visually appealing web applications using modern web technologies. Always eager to learn and innovate, I'm currently seeking opportunities to grow and contribute to exciting projects.
+                                <p className="text-gray-400 text-md mb-8">
+                                    I'm a third-year B.E. Student at Thapar Institute of Engineering and Technology, majoring in Computer Science. Passionate about Frontend Web Development, I love crafting user-friendly and visually appealing web applications using modern web technologies.
                                     <br /><br />
-                                    Let's connect and build something amazing! 🚀
+                                    Beyond frontend development, I have a keen interest in Data Structures and Algorithms (DSA), constantly refining my problem-solving skills to write efficient and optimized code. I enjoy tackling coding challenges and participating in contests to improve my algorithmic thinking.
+                                    <br /><br />
+                                    I'm also fascinated by computer animation and gaming, exploring how technology brings creativity to life. The intersection of design, graphics, and interactivity excites me, and I aspire to contribute to projects that push the boundaries of immersive experiences.
+                                    <br /><br />
+                                    Always eager to learn and innovate, I'm currently seeking opportunities to grow and contribute to exciting projects. Let’s connect and build something amazing! 🚀
+                                    
                                 </p>
                                 <div className="flex justify-center md:justify-start space-x-4">
 
@@ -60,7 +65,7 @@ const About = () => {
 
                                     imageSrc={Img1}
 
-                                    altText="Kendrick Lamar - GNX Album Cover" 
+                                    altText="Kendrick Lamar - GNX Album Cover"
 
                                     containerHeight="300px"
 
@@ -80,7 +85,7 @@ const About = () => {
 
                                     displayOverlayContent={true}
 
-                                   
+
 
                                 />
                             </div>
