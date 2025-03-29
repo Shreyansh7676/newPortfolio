@@ -1,7 +1,7 @@
 import React from 'react'
 import AnimatedContent from './components/AnimatedComponent';
-import Img1 from './assets/3426526-Photoroom.png'
-
+import Img1 from './assets/WhatsApp Image 2024-07-15 at 14.20.07_42ad5da1.jpg'
+import TiltedCard from './components/NewTilted'
 const About = () => {
     return (
         <div>
@@ -37,7 +37,7 @@ const About = () => {
                                     Let's connect and build something amazing! 🚀
                                 </p>
                                 <div className="flex justify-center md:justify-start space-x-4">
-                                   
+
                                     <button
                                         className="bg-emerald-400 text-sm md:max-w-1/2 text-white px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:bg-emerald-500 cursor-pointer transition-colors"
                                     >
@@ -51,10 +51,37 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="mt-12 md:mt-1">
-                                <img
+                                {/* <img
                                     src={Img1}
                                     alt="coding-vector"
                                     className="w-72 h-72 object-contain md:ml-10 md:block"
+                                /> */}
+                                <TiltedCard
+
+                                    imageSrc={Img1}
+
+                                    altText="Kendrick Lamar - GNX Album Cover" 
+
+                                    containerHeight="300px"
+
+                                    containerWidth="300px"
+
+                                    imageHeight="300px"
+
+                                    imageWidth="300px"
+
+                                    rotateAmplitude={12}
+
+                                    scaleOnHover={1.2}
+
+                                    showMobileWarning={false}
+
+                                    showTooltip={false}
+
+                                    displayOverlayContent={true}
+
+                                   
+
                                 />
                             </div>
                         </div>
