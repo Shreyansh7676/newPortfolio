@@ -71,7 +71,7 @@ function App() {
                 baseItemSize={50}
 
                 magnification={70}
-                className='fixed z-99 bottom-8 bg-zinc-950/70 backdrop-blur-md scale-75 md:scale-100'
+                className='fixed z-99 bottom-8 bg-zinc-950/70 backdrop-blur-md scale-75 md:scale-100 scroll-smooth transition-all'
 
             />
             {/* Projects Section */}
