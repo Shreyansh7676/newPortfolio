@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Code2, House, User, Layers, Trophy } from 'lucide-react';
 import Hero from './Hero'
 import About from './About';
@@ -12,10 +12,10 @@ import AnimatedContent from './components/AnimatedComponent';
 function App() {
     const contactRef = useRef(null);
     const projectRef = useRef(null);
-    const homeRef=useRef(null);
-    const techRef=useRef(null);
-    const aboutRef=useRef(null);
-    const achievementsRef=useRef(null);
+    const homeRef = useRef(null);
+    const techRef = useRef(null);
+    const aboutRef = useRef(null);
+    const achievementsRef = useRef(null);
 
     const scrollToContact = () => {
         contactRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -35,18 +35,46 @@ function App() {
     const scrollToAchievements = () => {
         achievementsRef.current.scrollIntoView({ behavior: 'smooth' });
     };
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
+    // Scroll handler function
+    const controlDock = () => {
+        const currentScrollY = window.scrollY;
+
+        // Show dock when scrolling up or at the top of the page
+        if (currentScrollY <= 0 || currentScrollY < lastScrollY) {
+            setIsVisible(true);
+        }
+        // Hide dock when scrolling down and not at the top
+        else if (currentScrollY > lastScrollY) {
+            setIsVisible(false);
+        }
+
+        // Update scroll position
+        setLastScrollY(currentScrollY);
+    };
+
+    useEffect(() => {
+        // Add scroll event listener
+        window.addEventListener('scroll', controlDock);
+
+        // Clean up event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', controlDock);
+        };
+    }, [lastScrollY]);
     const items = [
 
-        { icon: <House size={18} className='text-emerald-400' />, label: 'Home', onClick:scrollToHome },
+        { icon: <House size={18} className='text-emerald-400' />, label: 'Home', onClick: scrollToHome },
 
-        { icon: <User size={18} className='text-emerald-400' />, label: 'About', onClick:scrollToAbout },
+        { icon: <User size={18} className='text-emerald-400' />, label: 'About', onClick: scrollToAbout },
 
-        { icon: <Code2 size={18} className='text-emerald-400' />, label: 'Project', onClick:scrollToProject },
+        { icon: <Code2 size={18} className='text-emerald-400' />, label: 'Project', onClick: scrollToProject },
 
-        { icon: <Layers size={18} className='text-emerald-400' />, label: 'Tech Stack', onClick:scrollToTech },
-        { icon: <Trophy size={18} className='text-emerald-400' />, label: 'Experience', onClick:scrollToAchievements},
-        { icon: <Mail size={18} className='text-emerald-400' />, label: 'Contact', onClick:scrollToContact },
+        { icon: <Layers size={18} className='text-emerald-400' />, label: 'Tech Stack', onClick: scrollToTech },
+        { icon: <Trophy size={18} className='text-emerald-400' />, label: 'Experience', onClick: scrollToAchievements },
+        { icon: <Mail size={18} className='text-emerald-400' />, label: 'Contact', onClick: scrollToContact },
 
     ];
 
@@ -61,19 +89,22 @@ function App() {
             {/* Hero Section */}
 
             <About scrollToContact={scrollToContact} scrollToProject={scrollToProject} />
-            
-            <Dock
+            <div className={`fixed bottom-0 left-0 right-0 flex justify-center z-50 transition-all duration-300 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+                }`}>
+                <Dock
 
-                items={items}
+                    items={items}
 
-                panelHeight={68}
+                    panelHeight={68}
 
-                baseItemSize={50}
+                    baseItemSize={50}
 
-                magnification={70}
-                className='fixed z-99 bottom-8 bg-zinc-950/70 backdrop-blur-md scale-75 md:scale-100 scroll-smooth transition-all'
+                    magnification={70}
+                    className='fixed z-99 bottom-8 bg-zinc-950/70 backdrop-blur-md scale-75 md:scale-100 scroll-smooth transition-all'
 
-            />
+                />
+            </div>
+
             {/* Projects Section */}
             <Projects ref={projectRef} />
             {/*Tech Stack*/}
