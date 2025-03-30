@@ -69,6 +69,7 @@ const TechStack = () => {
                 scale={1.0}
 
                 threshold={0.1}
+                className="scroll-smooth"
 
             >
                 <h2 className="text-3xl font-bold flex items-center justify-center">
