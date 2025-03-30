@@ -2,7 +2,10 @@ import React from 'react'
 import AnimatedContent from './components/AnimatedComponent';
 import Img1 from './assets/WhatsApp Image 2024-07-15 at 14.20.07_42ad5da1.jpg'
 import TiltedCard from './components/NewTilted'
-const About = () => {
+import { useNavigate } from 'react-router';
+const About = ({scrollToContact, scrollToProject}) => {
+    
+    const navigate=useNavigate();
     return (
         <div>
             <div className="min-h-screen flex items-center justify-center relative bg-zinc-950">
@@ -44,12 +47,14 @@ const About = () => {
                                 <div className="flex justify-center md:justify-start space-x-4">
 
                                     <button
-                                        className="bg-emerald-400 text-sm md:max-w-1/2 text-white px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:bg-emerald-500 cursor-pointer transition-colors"
+                                        className="bg-emerald-400 text-sm md:max-w-1/2 text-white px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:bg-emerald-500 cursor-pointer transition-colors" 
+                                        onClick={scrollToContact}
                                     >
                                         Get in touch
                                     </button>
                                     <button
                                         className="bg-transparent text-sm max-w-1/2 md:max-w-1/2 text-emerald-300 px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:text-gray-300 cursor-pointer transition-colors"
+                                        onClick={scrollToProject}
                                     >
                                         View my work
                                     </button>
