@@ -26,6 +26,7 @@ const About = ({scrollToContact, scrollToProject}) => {
                     scale={1.0}
 
                     threshold={0.1}
+                    className="scroll-smooth"
 
                 >
                     <section className="w-full px-4 sm:px-6 lg:px-8">
