@@ -25,7 +25,8 @@ const Achievements = () => {
 
                         scale={1.0}
 
-                        threshold={0.1}
+                        threshold={0.1} 
+                        className="scroll-smooth transform-gpu"
 
                     >
                         <h2 className="text-3xl font-bold mb-12 flex items-center justify-center">
