@@ -20,6 +20,7 @@ import CSS from './assets/svg/CSS3.svg'
 import BootStrap from './assets/svg/Bootstrap.svg'
 import Firebase from './assets/svg/Firebase.svg'
 import { Layers, Type } from 'lucide-react'
+import AnimatedContent from './components/AnimatedComponent'
 
 const TechStack = () => {
     const items = [
@@ -51,15 +52,35 @@ const TechStack = () => {
     ];
     return (
         <div className='min-h-screen flex flex-col items-center justify-start'>
-            <h2 className="text-3xl font-bold flex items-center justify-center">
-                <Layers className="w-8 h-8 mr-4 text-emerald-400 text-center" />
-                Tech Stack & Tools
-            </h2>
-            <div className='flex items-center justify-center mt-4 md:mt-20'>
+            <AnimatedContent
 
-                <GlassIcons items={items} className="custom-class" />
+                distance={100}
 
-            </div>
+                direction="vertical"
+
+                reverse={false}
+
+                config={{ tension: 50, friction: 25 }}
+
+                initialOpacity={0.0}
+
+                animateOpacity
+
+                scale={1.0}
+
+                threshold={0.1}
+
+            >
+                <h2 className="text-3xl font-bold flex items-center justify-center">
+                    <Layers className="w-8 h-8 mr-4 text-emerald-400 text-center" />
+                    Tech Stack & Tools
+                </h2>
+                <div className='flex items-center justify-center mt-4 md:mt-20'>
+
+                    <GlassIcons items={items} className="custom-class" />
+
+                </div>
+                </AnimatedContent>
         </div>
     )
 }
