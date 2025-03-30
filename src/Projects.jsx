@@ -6,11 +6,12 @@ import Img3 from './assets/Screenshot 2025-03-24 184446.png'
 import Img4 from './assets/Screenshot 2025-03-26 204922.png'
 import SpotlightCard from './components/SpotlightComponent'
 import AnimatedContent from './components/AnimatedComponent';
+import { forwardRef } from 'react';
 
-const Projects = () => {
+const Projects = forwardRef((props, ref) => {
     return (
-        <div>
-            <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div ref={ref}>
+            <section  id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-5xl mx-auto">
                     <AnimatedContent
 
@@ -129,6 +130,6 @@ const Projects = () => {
             </section >
         </div >
     )
-}
+});
 
 export default Projects
