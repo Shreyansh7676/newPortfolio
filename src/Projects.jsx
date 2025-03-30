@@ -30,6 +30,7 @@ const Projects = forwardRef((props, ref) => {
                         scale={1.0}
 
                         threshold={0.1}
+                        className="scroll-smooth"
 
                     >
                         <h2 className="text-3xl font-bold mb-12 flex items-center justify-center">
