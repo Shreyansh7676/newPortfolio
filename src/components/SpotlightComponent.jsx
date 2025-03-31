@@ -8,7 +8,6 @@ const SpotlightCard = ({ children, className = "", spotlightColor = "rgba(255, 2
 
   const handleMouseMove = (e) => {
     if (!divRef.current || isFocused) return;
-
     const rect = divRef.current.getBoundingClientRect();
     setPosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
   };
@@ -39,7 +38,10 @@ const SpotlightCard = ({ children, className = "", spotlightColor = "rgba(255, 2
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative rounded-3xl border border-neutral-800 bg-[neutral-900] p-8 ${className} `}
+      className={`relative rounded-3xl border border-neutral-800 bg-neutral-900 p-8 min-h-[200px] w-full ${className}`}
+      style={{
+        boxSizing: 'border-box',
+      }}
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out"
@@ -48,7 +50,9 @@ const SpotlightCard = ({ children, className = "", spotlightColor = "rgba(255, 2
           background: `radial-gradient(circle at ${position.x}px ${position.y}px, ${spotlightColor}, transparent 80%)`,
         }}
       />
-      {children}
+      <div className="relative z-10">
+        {children}
+      </div>
     </div>
   );
 };
