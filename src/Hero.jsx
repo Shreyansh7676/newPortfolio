@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import { Search, BookOpen, DollarSign, Repeat2, ArrowRight, Star, ShoppingBag } from 'lucide-react';
 import Auroramainbg from './auroramainbg';
 import BlurText from './components/Blurtext';
+import { forwardRef } from 'react';
 
-function App() {
-
+const App=forwardRef((props, ref)=> {
     return (
         <>
-            <div className="min-h-screen bg-zinc-950">
+            <div className="min-h-screen bg-zinc-950" ref={ref}>
                 {/* Hero Section */}
                 <div className="relative min-h-screen flex items-center justify-center">
                     {/* Aurora Background */}
@@ -52,6 +52,6 @@ function App() {
 
         </>
     );
-}
+});
 
 export default App;
