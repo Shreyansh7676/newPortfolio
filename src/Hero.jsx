@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Search, BookOpen, DollarSign, Repeat2, ArrowRight, Star, ShoppingBag } from 'lucide-react';
-import Auroramainbg from './auroramainbg';
+import Auroramainbg from './Auroramainbg';
 import BlurText from './components/Blurtext';
 import { forwardRef } from 'react';
 
