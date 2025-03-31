@@ -4,9 +4,10 @@ import AnimatedContent from './components/AnimatedComponent'
 import { Trophy } from 'lucide-react'
 import Img1 from './assets/SIH2024_IDEA_Presentation_Format.pptx.png'
 import Img2 from './assets/download (1).png'
-const Achievements = () => {
+import { forwardRef } from 'react'
+const Achievements = forwardRef((props, ref) => {
     return (
-        <div>
+        <div ref={ref}>
             <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-5xl mx-auto">
                     <AnimatedContent
@@ -26,7 +27,7 @@ const Achievements = () => {
                         scale={1.0}
 
                         threshold={0.1} 
-                        className="scroll-smooth transform-gpu"
+                        className="scroll-smooth"
 
                     >
                         <h2 className="text-3xl font-bold mb-12 flex items-center justify-center">
@@ -72,6 +73,6 @@ const Achievements = () => {
             </section >
         </div >
     )
-}
+});
 
 export default Achievements
