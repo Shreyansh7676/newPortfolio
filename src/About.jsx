@@ -3,11 +3,10 @@ import AnimatedContent from './components/AnimatedComponent';
 import Img1 from './assets/WhatsApp Image 2024-07-15 at 14.20.07_42ad5da1.jpg'
 import TiltedCard from './components/NewTilted'
 import { useNavigate } from 'react-router';
-const About = ({scrollToContact, scrollToProject}) => {
-    
-    const navigate=useNavigate();
+import { forwardRef } from 'react';
+const About = forwardRef(({ scrollToContact, scrollToProject }, ref) => {
     return (
-        <div>
+        <div ref={ref}>
             <div className="min-h-screen flex items-center justify-center relative bg-zinc-950">
                 <AnimatedContent
 
@@ -26,14 +25,12 @@ const About = ({scrollToContact, scrollToProject}) => {
                     scale={1.0}
 
                     threshold={0.1}
-                    className="scroll-smooth"
 
                 >
                     <section className="w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col md:flex-row items-center justify-center md:gap-10 lg:gap-20 max-w-7xl mx-auto">
                             <div className="max-w-xl text-start md:text-start">
                                 <h2 className="text-3xl font-bold mb-6">About Me</h2>
-
 
                                 <p className="text-gray-400 text-md mb-8">
                                     I'm a third-year B.E. Student at Thapar Institute of Engineering and Technology, majoring in Computer Science. Passionate about Frontend Web Development, I love crafting user-friendly and visually appealing web applications using modern web technologies.
@@ -62,11 +59,6 @@ const About = ({scrollToContact, scrollToProject}) => {
                                 </div>
                             </div>
                             <div className="mt-12 md:mt-1">
-                                {/* <img
-                                    src={Img1}
-                                    alt="coding-vector"
-                                    className="w-72 h-72 object-contain md:ml-10 md:block"
-                                /> */}
                                 <TiltedCard
 
                                     imageSrc={Img1}
@@ -90,19 +82,14 @@ const About = ({scrollToContact, scrollToProject}) => {
                                     showTooltip={false}
 
                                     displayOverlayContent={true}
-
-
-
                                 />
                             </div>
                         </div>
-
-
                     </section>
                 </AnimatedContent>
             </div>
         </div>
     )
-}
+});
 
 export default About
