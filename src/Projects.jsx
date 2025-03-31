@@ -39,7 +39,7 @@ const Projects = forwardRef((props, ref) => {
                         </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <SpotlightCard className="custom-spotlight-card h-[200] hover:scale-105 transition-all" spotlightColor="rgba(52, 211, 153, 0.2)">
+                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(52, 211, 153, 0.2)">
 
                                 <p className='text-2xl font-bold'>Campus MarketPlace</p>
                                 <img src={Img1} className='h-32 md:h-48 object-cover md:object-cover mt-5 ' />
@@ -60,7 +60,7 @@ const Projects = forwardRef((props, ref) => {
                                 </div>
 
                             </SpotlightCard>
-                            <SpotlightCard className="custom-spotlight-card h-[200] hover:scale-105 transition-all" spotlightColor="rgba(52, 211, 153, 0.2)">
+                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(52, 211, 153, 0.2)">
 
                                 <p className='text-2xl font-bold'>Detectly</p>
                                 <img src={Img2} className='h-32 md:h-48 object-cover md:object-cover mt-5 ' />
@@ -82,7 +82,7 @@ const Projects = forwardRef((props, ref) => {
 
 
                             </SpotlightCard>
-                            <SpotlightCard className="custom-spotlight-card h-[200] hover:scale-105 transition-all" spotlightColor="rgba(52, 211, 153, 0.2)">
+                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(52, 211, 153, 0.2)">
 
                                 <p className='text-2xl font-bold'>Edit-Ease</p>
                                 <img src={Img3} className='h-32 md:h-48 object-cover md:object-cover mt-5 ' />
@@ -103,7 +103,7 @@ const Projects = forwardRef((props, ref) => {
                                 </div>
 
                             </SpotlightCard>
-                            <SpotlightCard className="custom-spotlight-card h-[200] hover:scale-105 transition-all" spotlightColor="rgba(52, 211, 153, 0.2)">
+                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(52, 211, 153, 0.2)">
 
                                 <p className='text-2xl font-bold'>FreeLance Portfolio Project</p>
                                 <img src={Img4} className='h-32 md:h-48 object-cover md:object-cover mt-5 ' />
