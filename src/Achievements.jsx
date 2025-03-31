@@ -49,7 +49,7 @@ const Achievements = forwardRef((props, ref) => {
                                 </div>
 
                             </SpotlightCard>
-                            <SpotlightCard className="custom-spotlight-card h-[200]" spotlightColor="rgba(52, 211, 153, 0.2)">
+                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(52, 211, 153, 0.2)">
                                 <div className='flex flex-col gap-3 md:gap-0 md:flex-row justify-between  items-center'>
                                     <p className='text-2xl font-bold'>Media Secretary - ISTE Thapar Chapter</p>
                                     <p className='text-md text-gray-400 font-light'>2022-25</p>
