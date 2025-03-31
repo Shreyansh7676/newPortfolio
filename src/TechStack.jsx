@@ -21,8 +21,9 @@ import BootStrap from './assets/svg/Bootstrap.svg'
 import Firebase from './assets/svg/Firebase.svg'
 import { Layers, Type } from 'lucide-react'
 import AnimatedContent from './components/AnimatedComponent'
+import { forwardRef } from 'react'
 
-const TechStack = () => {
+const TechStack = forwardRef((props, ref) => {
     const items = [
 
         { icon: <img src={ReactIcon} alt="Photoshop" />, color: 'indigo', label: 'React' },
@@ -51,7 +52,7 @@ const TechStack = () => {
 
     ];
     return (
-        <div className='min-h-screen flex flex-col items-center justify-start'>
+        <div className='min-h-screen flex flex-col items-center justify-start' ref={ref}>
             <AnimatedContent
 
                 distance={100}
@@ -84,6 +85,6 @@ const TechStack = () => {
                 </AnimatedContent>
         </div>
     )
-}
+});
 
 export default TechStack
