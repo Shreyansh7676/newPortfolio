@@ -36,7 +36,7 @@ const Achievements = forwardRef((props, ref) => {
                         </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-                            <SpotlightCard className="custom-spotlight-card h-[200]" spotlightColor="rgba(52, 211, 153, 0.2)">
+                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(52, 211, 153, 0.2)">
 
                                 <p className='text-2xl font-bold'>SIH 2024 National Round</p>
                                 <div className='flex flex-col md:flex-row items-center justify-between'>
