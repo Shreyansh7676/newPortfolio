@@ -80,7 +80,7 @@ function App() {
 
     return (
         <div className="bg-zinc-950 text-gray-100 min-h-screen">
-            <Hero />
+            <Hero ref={homeRef} />
 
             <div className="absolute bottom-30 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <ChevronDown className="w-6 h-6 text-emerald-400" />
@@ -88,7 +88,7 @@ function App() {
 
             {/* Hero Section */}
 
-            <About scrollToContact={scrollToContact} scrollToProject={scrollToProject} />
+            <About scrollToContact={scrollToContact} scrollToProject={scrollToProject} ref={aboutRef}/>
             <div className={`fixed bottom-0 left-0 right-0 flex justify-center z-50 transition-all duration-300 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                 }`}>
                 <Dock
@@ -108,8 +108,8 @@ function App() {
             {/* Projects Section */}
             <Projects ref={projectRef} />
             {/*Tech Stack*/}
-            <TechStack />
-            <Achievements />
+            <TechStack ref={techRef}/>
+            <Achievements ref={achievementsRef}/>
             {/* Contact Section */}
             <Contact ref={contactRef} />
         </div>
