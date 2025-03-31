@@ -35,7 +35,7 @@ const Contact = forwardRef((props, ref) => {
                     scale={1.0}
 
                     threshold={0.1}
-                    className="scroll-smooth transform-gpu ease-in-out"
+                    className="scroll-smooth ease-in-out"
 
                 >
 
