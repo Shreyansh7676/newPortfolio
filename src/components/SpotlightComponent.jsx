@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import Img1 from '../assets/Screenshot 2025-03-22 212336.png'
 
 const SpotlightCard = ({ children, className = "", spotlightColor = "rgba(255, 255, 255, 0.25)" }) => {
   const divRef = useRef(null);
