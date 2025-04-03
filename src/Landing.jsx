@@ -8,6 +8,7 @@ import TechStack from './TechStack';
 import Achievements from './Achievements';
 import Dock from './components/Dock'
 import AnimatedContent from './components/AnimatedComponent';
+import ScrollVelocity from './components/ScrollVelocity';
 
 function App() {
     const contactRef = useRef(null);
@@ -85,10 +86,21 @@ function App() {
             <div className="absolute bottom-30 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <ChevronDown className="w-6 h-6 text-emerald-400" />
             </div>
+            <div className='mb-10'>
+                <ScrollVelocity
+
+                    texts={['Shreyansh Srivastava', 'Shreyansh Srivastava']}
+
+                    velocity={100}
+
+                    className="custom-scroll-text"
+
+                />
+            </div>
 
             {/* Hero Section */}
 
-            <About scrollToContact={scrollToContact} scrollToProject={scrollToProject} ref={aboutRef}/>
+            <About scrollToContact={scrollToContact} scrollToProject={scrollToProject} ref={aboutRef} />
             <div className={`fixed bottom-0 left-0 right-0 flex justify-center z-50 transition-all duration-300 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                 }`}>
                 <Dock
@@ -108,8 +120,8 @@ function App() {
             {/* Projects Section */}
             <Projects ref={projectRef} />
             {/*Tech Stack*/}
-            <TechStack ref={techRef}/>
-            <Achievements ref={achievementsRef}/>
+            <TechStack ref={techRef} />
+            <Achievements ref={achievementsRef} />
             {/* Contact Section */}
             <Contact ref={contactRef} />
         </div>
