@@ -86,17 +86,7 @@ function App() {
             <div className="absolute bottom-30 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <ChevronDown className="w-6 h-6 text-emerald-400" />
             </div>
-            <div className='mb-10'>
-                <ScrollVelocity
-
-                    texts={['Shreyansh Srivastava', 'Shreyansh Srivastava']}
-
-                    velocity={100}
-
-                    className="custom-scroll-text"
-
-                />
-            </div>
+            
 
             {/* Hero Section */}
 
