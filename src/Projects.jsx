@@ -71,10 +71,10 @@ const Projects = forwardRef((props, ref) => {
                                 <img src={Img5} className='h-32 w-full md:h-48 object-cover items-center md:object-cover mt-5 ' />
                                 <div className='flex items-center justify-between'>
                                     <div className='mt-5 flex gap-5 items-center justify-start scale-90 md:scale-100'>
-                                        <a href='https://github.com/Shreyansh7676/Detectly' className='hover:text-emerald-400' target='_blank'>
+                                        <a href='https://github.com/Shreyansh7676/Smart-pano' className='hover:text-emerald-400' target='_blank'>
                                             <Github />
                                         </a>
-                                        <a href='https://ai-content-detector-ashy.vercel.app/' className='hover:text-emerald-400' target='_blank'>
+                                        <a href='https://smart-pano.vercel.app/' className='hover:text-emerald-400' target='_blank'>
                                             <Link2 />
                                         </a>
                                     </div>
