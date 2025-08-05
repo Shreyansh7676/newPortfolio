@@ -4,6 +4,7 @@ import Img1 from './assets/Screenshot 2025-03-22 212336.png'
 import Img2 from './assets/image.png'
 import Img3 from './assets/Screenshot 2025-03-24 184446.png'
 import Img4 from './assets/VoiceCloning-DataCollection-scaled.jpeg'
+import Img5 from './assets/Screenshot 2025-08-05 114031.png'
 import SpotlightCard from './components/SpotlightComponent'
 import AnimatedContent from './components/AnimatedComponent';
 import { forwardRef } from 'react';
@@ -60,7 +61,32 @@ const Projects = forwardRef((props, ref) => {
 
                                 </div>
                                 <div className='flex text-start mt-3'>
-                                    <p className='text-gray-400 text-sm'>A vibrant peer-to-peer marketplace tailored for university students to buy, sell, or exchange essentials within their campus. With a built-in chat feature, it fosters seamless communication and trust between users—making campus trading smarter and more social.</p>
+                                    <p className='text-gray-400 text-sm'>A vibrant peer-to-peer marketplace tailored for university students to buy, sell, or exchange essentials within their campus. With a built-in chat feature, it fosters seamless communication and trust between users-making campus trading smarter and more social.</p>
+                                </div>
+
+                            </SpotlightCard>
+                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(52, 211, 153, 0.2)">
+
+                                <p className='text-2xl font-bold'>SmartPano</p>
+                                <img src={Img5} className='h-32 w-full md:h-48 object-cover items-center md:object-cover mt-5 ' />
+                                <div className='flex items-center justify-between'>
+                                    <div className='mt-5 flex gap-5 items-center justify-start scale-90 md:scale-100'>
+                                        <a href='https://github.com/Shreyansh7676/Detectly' className='hover:text-emerald-400' target='_blank'>
+                                            <Github />
+                                        </a>
+                                        <a href='https://ai-content-detector-ashy.vercel.app/' className='hover:text-emerald-400' target='_blank'>
+                                            <Link2 />
+                                        </a>
+                                    </div>
+                                    <div className='flex items-center pt-5 gap-1 scale-90 md:scale-100'>
+                                        <button className='bg-zinc-800 p-2 font-light rounded-xl text-xs'>React JS</button>
+                                        <button className='bg-zinc-800 p-2 font-light rounded-xl text-xs'>Flask</button>
+                                        <button className='bg-zinc-800 p-2 font-light rounded-xl text-xs'>OpenCV</button>
+                                        <button className='bg-zinc-800 p-2 font-light rounded-xl text-xs'>Tailwind CSS</button>
+                                    </div>
+                                </div>
+                                <div className='flex text-start mt-3'>
+                                    <p className='text-gray-400 text-sm'> Developed a full-stack panorama web app using React.js, Tailwind CSS, Flask, and OpenCV to stitch two high-res images (up to 4K). Integrated ORB and RANSAC for fast, accurate image alignment with ~2s processing.</p>
                                 </div>
 
                             </SpotlightCard>
