@@ -40,8 +40,8 @@ const Contact = forwardRef((props, ref) => {
                 >
 
                     <div className="relative z-10 max-w-5xl mx-auto text-center">
-                        <h2 className="text-3xl font-bold mb-8 text-white">Get In Touch</h2>
-                        <p className="text-gray-400 max-w-xl mx-auto mb-8">
+                        <h2 className="text-4xl md:text-5xl font-migra italic font-bold mb-2 text-white">Get In Touch</h2>
+                        <p className="text-gray-400 font-right text-sm md:text-lg max-w-xl mx-auto mb-8">
                             I'm currently looking for new opportunities. Whether you have a question
                             or just want to say hi, I'll try my best to get back to you!
                         </p>

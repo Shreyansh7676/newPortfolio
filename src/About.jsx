@@ -30,10 +30,10 @@ const About = forwardRef(({ scrollToContact, scrollToProject }, ref) => {
                     <section className="w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col md:flex-row items-center justify-center md:gap-10 lg:gap-20 max-w-7xl mx-auto">
                             <div className="max-w-xl text-start md:text-start">
-                                <h2 className="text-3xl font-bold mb-6">About Me</h2>
+                                <h2 className="text-5xl font-migra italic font-bold mb-6">About Me</h2>
 
-                                <p className="text-gray-400 text-md mb-8">
-                                    I'm a third-year B.E. Student at Thapar Institute of Engineering and Technology, majoring in Computer Science. Passionate about Frontend Web Development, I love crafting user-friendly and visually appealing web applications using modern web technologies.
+                                <p className="text-gray-400 font-right text-md mb-8">
+                                    A final-year B.E. Student at Thapar Institute of Engineering and Technology, majoring in Computer Science. Passionate about Full Stack Web Development, I love crafting user-friendly and visually appealing web applications using modern web technologies.
                                     <br /><br />
                                     Beyond frontend development, I have a keen interest in Data Structures and Algorithms (DSA), constantly refining my problem-solving skills to write efficient and optimized code. I enjoy tackling coding challenges and participating in contests to improve my algorithmic thinking.
                                     <br /><br />
@@ -45,13 +45,13 @@ const About = forwardRef(({ scrollToContact, scrollToProject }, ref) => {
                                 <div className="flex justify-center md:justify-start space-x-4">
 
                                     <button
-                                        className="bg-emerald-400 text-sm md:max-w-1/2 text-white px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:bg-emerald-500 cursor-pointer transition-colors" 
+                                        className="bg-emerald-400 font-right text-sm md:max-w-1/2 text-white px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:bg-emerald-500 cursor-pointer transition-colors" 
                                         onClick={scrollToContact}
                                     >
                                         Get in touch
                                     </button>
                                     <button
-                                        className="bg-transparent text-sm max-w-1/2 md:max-w-1/2 text-emerald-300 px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:text-gray-300 cursor-pointer transition-colors"
+                                        className="bg-transparent font-right text-sm max-w-1/2 md:max-w-1/2 text-emerald-300 px-4 py-3 rounded-full font-medium border-2 border-gray-700 hover:text-gray-300 cursor-pointer transition-colors"
                                         onClick={scrollToProject}
                                     >
                                         View my work

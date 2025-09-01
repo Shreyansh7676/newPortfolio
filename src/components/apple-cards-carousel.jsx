@@ -204,7 +204,7 @@ export const Card = ({
             <motion.button
                 layoutId={layout ? `card-${card.title}` : undefined}
                 
-                className="relative hover:scale-105 transition-all z-10 flex h-64 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[30rem] md:w-96 dark:bg-neutral-900">
+                className="relative hover:scale-105 transition-all z-10 flex h-96 md:h-64 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[30rem] md:w-96 dark:bg-neutral-900">
                 
                 {/* Background image */}
                 <BlurImage
