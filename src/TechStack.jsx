@@ -22,6 +22,7 @@ import Firebase from './assets/svg/Firebase.svg'
 import { Layers, Type } from 'lucide-react'
 import AnimatedContent from './components/AnimatedComponent'
 import { forwardRef } from 'react'
+import SpotlightCard from './components/SpotlightComponent'
 
 const TechStack = forwardRef((props, ref) => {
     const items = [

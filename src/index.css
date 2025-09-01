@@ -1,1 +1,35 @@
+@font-face {
+  font-family: "Doto";
+  src: url("./fonts/Birds\ of\ Paradise\ +\ PERSONAL\ USE\ ONLY.ttf");
+}
+@font-face {
+  font-family: "Qoto";
+  src: url("./fonts/Coolvetica\ Rg\ It.otf");
+}
+@font-face {
+  font-family: "Foto";
+  src: url("./fonts/Coolvetica\ Rg\ Cond.otf");
+}
+@font-face {
+  font-family: "might";
+  src: url("./fonts/RightGrotesk-WideMedium.otf");
+}
+@font-face {
+  font-family: "RightLight";
+  src: url("./fonts/RightGrotesk-Medium.otf");
+}
+@font-face {
+  font-family: "Migra";
+  src: url("./fonts/Migra-Extrabold.otf");
+}
+
 @import "tailwindcss";
+
+@theme{
+    --font-doto:Doto,"sans-serif";
+    --font-qoto:Qoto,"sans-serif";
+    --font-foto:Foto,"sans-serif";
+    --font-right:might,"sans-serif";
+    --font-right-light:RightLight,"sans-serif";
+    --font-migra:Migra,"sans-serif";
+}
