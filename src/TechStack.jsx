@@ -5,7 +5,7 @@ import { forwardRef } from 'react'
 
 
 import LogoLoop from './components/LogoLoop'
-import { SiReact, SiJavascript, SiTypescript, SiTailwindcss, SiPython, SiExpress, SiNodedotjs, SiCss3, SiHtml5, SiFlask, SiVercel, SiSocketdotio, SiBootstrap, SiVite, SiUnity, SiOpencv, SiGithub, SiBlender } from 'react-icons/si';
+import { SiReact, SiJavascript, SiTypescript, SiMongodb, SiTailwindcss, SiPython, SiExpress, SiNodedotjs, SiCss3, SiHtml5, SiFlask, SiVercel, SiSocketdotio, SiBootstrap, SiVite, SiUnity, SiOpencv, SiGithub, SiBlender } from 'react-icons/si';
 import { BiLogoFirebase } from "react-icons/bi";
 import { VscVscode } from "react-icons/vsc";
 import { TbBrandCpp } from "react-icons/tb";
@@ -16,6 +16,7 @@ const techLogos = [
     { node: <SiJavascript />, title: "JavaScript", href: "https://www.javascript.com/" },
     { node: <SiExpress />, title: "Express", href: "https://expressjs.com/" },
     { node: <SiNodedotjs />, title: "Node.js", href: "https://nodejs.org/" },
+    { node: <SiMongodb />, title: "Vite", href: "https://vitejs.dev/" },
     { node: <SiFlask />, title: "Flask", href: "https://flask.palletsprojects.com/" },
     { node: <SiCss3 />, title: "CSS3", href: "https://www.w3.org/Style/CSS/Overview.en.html" },
     { node: <SiHtml5 />, title: "HTML5", href: "https://www.w3.org/TR/html52/" },

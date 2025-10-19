@@ -47,7 +47,7 @@ const DummyContent = () => {
 
 const data = [
     {
-        category: "React JS, Express JS, Socket.IO, Tailwind CSS",
+        category: "React JS, Express JS, Socket.IO, MongoDB",
         title: "CodeWeave",
         src: Img6,
         content: "A real-time collaborative code editor enabling seamless multi-user editing with low latency, syntax highlighting, and reusable components.",
@@ -55,7 +55,7 @@ const data = [
         link: "https://codeweave-7yxf.onrender.com/"
     },
     {
-        category: "React JS, Flask, OpenCV, Tailwind CSS",
+        category: "React JS, Flask, OpenCV",
         title: "SmartPano",
         src: Img5,
         content: "A web application that leverages advanced image processing techniques to create stunning panoramic images. Users can upload their photos and let SmartPano stitch them together seamlessly.",
@@ -63,7 +63,7 @@ const data = [
         link: "https://smart-pano.vercel.app/"
     },
     {
-        category: "React JS, FireBase, Tailwind CSS",
+        category: "React JS, FireBase",
         title: "Campus MarketPlace",
         src: Img1,
         content: "A vibrant peer-to-peer marketplace tailored for university students to buy, sell, or exchange essentials within their campus. With a built-in chat feature, it fosters seamless communication and trust between users-making campus trading smarter and more social.",
@@ -72,7 +72,7 @@ const data = [
     },
 
     {
-        category: "React JS, Tailwind CSS, Axios",
+        category: "React JS",
         title: "Edit-Ease",
         src: Img3,
         content: "An intuitive photo editing platform where users can effortlessly enhance their pictures, apply creative filters, and achieve stunning results. With powerful background removal and easy-to-use tools, it delivers studio-quality edits right from your browser.",
@@ -80,7 +80,7 @@ const data = [
         link: "https://edit-ease-five.vercel.app/"
     },
     {
-        category: "React TS, Tailwind CSS, Axios",
+        category: "React TS",
         title: "Detectly",
         src: Img2,
         content: "An AI-powered tool designed to analyze and detect whether written content is human-crafted or AI-generated. Perfect for educators, content creators, and editors seeking content authenticity with just a click.",

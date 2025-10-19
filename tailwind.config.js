@@ -2,9 +2,9 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     theme: {
       extend: {
-        fontFamily: {
-        poppins: ["Doto", "sans-serif"],
-      },
+      //   fontFamily: {
+      //   poppins: ["Doto", "sans-serif"],
+      // },
       },
     },
     plugins: [],
