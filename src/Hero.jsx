@@ -37,7 +37,7 @@ const App = forwardRef((props, ref) => {
                             </div>
 
                             <div className="flex flex-col my-4 items-center md:flex-row justify-center gap-4">
-                                <a className="bg-transparent font-right font-medium text-sm max-w-1/2 md:max-w-1/8 text-emerald-300 px-4 py-3 rounded-full border-2 border-gray-700 hover:text-gray-300 cursor-pointer transition-colors" href='https://drive.google.com/file/d/16t7y8G9NlfJVKRVl4sshQY1Xmz1nbZrY/view?usp=sharing' target='_blank'>
+                                <a className="bg-transparent font-right font-medium text-sm max-w-1/2 md:max-w-1/8 text-emerald-300 px-4 py-3 rounded-full border-2 border-gray-700 hover:text-gray-300 cursor-pointer transition-colors" href='https://drive.google.com/file/d/1Hk3qawM1t345bQZfIbTsqXuYCHL4JwxN/view?usp=sharing' target='_blank'>
                                     View Resume
                                 </a>
                             </div>
