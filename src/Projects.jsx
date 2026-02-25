@@ -47,7 +47,7 @@ const DummyContent = () => {
 
 const data = [
     {
-        category: "React JS, Express JS, Socket.IO, MongoDB",
+        category: "React JS, Express JS, Socket.IO, MongoDB, OpenAI",
         title: "CodeWeave",
         src: Img6,
         content: "A real-time collaborative code editor enabling seamless multi-user editing with low latency, syntax highlighting, and reusable components.",
