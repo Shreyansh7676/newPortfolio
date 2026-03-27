@@ -52,7 +52,7 @@ const data = [
         src: Img6,
         content: "A real-time collaborative code editor enabling seamless multi-user editing with low latency, syntax highlighting, and reusable components.",
         github: "https://github.com/Shreyansh7676/CodeWeave",
-        link: "https://codeweave-7yxf.onrender.com/"
+        link: "https://codeweave-pw4q.onrender.com"
     },
     {
         category: "React JS, Flask, OpenCV",
@@ -119,7 +119,7 @@ const Projects = forwardRef((props, ref) => {
                             Featured Projects
                         </h2>
                         <Carousel items={cards} />
-                        
+
                     </AnimatedContent>
                 </div >
             </section >
